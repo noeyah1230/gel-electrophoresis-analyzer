@@ -1,0 +1,6 @@
+{
+  "identifier": "main-window",
+  "description": "Local app window; no shell, network, or general filesystem plugins",
+  "windows": ["main"],
+  "permissions": ["core:default", "core:window:allow-destroy"]
+}

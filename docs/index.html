@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A personal engineering project exploring local gel image annotation, band review, and approximate linear DNA sizing."
+    />
+    <meta name="theme-color" content="#f5f4ee" />
+    <meta name="referrer" content="no-referrer" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; img-src 'self'; style-src 'self'; script-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"
+    />
+    <title>Gel Electrophoresis Analyzer · Project portfolio</title>
+    <link rel="icon" href="assets/mark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header wrap">
+      <a class="wordmark" href="#"
+        ><img src="assets/mark.svg" width="32" height="32" alt="" />Gel
+        Electrophoresis Analyzer</a
+      >
+      <nav aria-label="Main navigation">
+        <a href="#process">Process</a><a href="#demo">Demo</a
+        ><a href="#about">About</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero wrap" aria-labelledby="title">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="status-dot"></span> Personal research-tool prototype ·
+            v0.1
+          </p>
+          <h1 id="title">Gel Electrophoresis<br /><em>Analyzer</em></h1>
+          <p class="subtitle">
+            A privacy-focused prototype for making electrophoresis images easier
+            to analyze and interpret.
+          </p>
+          <div class="actions">
+            <a
+              class="button primary"
+              data-repo-link
+              href="https://github.com/noeyah1230/gel-electrophoresis-analyzer"
+              >View on GitHub <span aria-hidden="true">↗</span></a
+            ><a class="button" href="#details"
+              >View Project Details <span aria-hidden="true">↓</span></a
+            >
+          </div>
+          <p class="hero-note">
+            Built to support careful observation. Every result stays open to
+            review.
+          </p>
+        </div>
+        <div
+          class="hero-figure"
+          aria-label="Conceptual illustration of annotated gel bands, not an application screenshot"
+        >
+          <div class="figure-top">
+            <span>IMAGE → OBSERVATION</span><span>01 / 04</span>
+          </div>
+          <svg
+            class="gel-diagram"
+            viewBox="0 0 480 360"
+            role="img"
+            aria-labelledby="diagram-title"
+          >
+            <title id="diagram-title">
+              Conceptual gel illustration with four lanes and annotation
+              markers; synthetic diagram, not research data
+            </title>
+            <defs>
+              <pattern
+                id="grid"
+                width="24"
+                height="24"
+                patternUnits="userSpaceOnUse"
+              >
+                <path
+                  d="M24 0H0V24"
+                  fill="none"
+                  stroke="#294a42"
+                  stroke-width=".5"
+                />
+              </pattern>
+            </defs>
+            <rect width="480" height="360" rx="8" fill="#142e29" />
+            <rect width="480" height="360" fill="url(#grid)" />
+            <g
+              fill="#b7ccbe"
+              font-family="monospace"
+              font-size="12"
+              text-anchor="middle"
+            >
+              <text x="92" y="39">LADDER</text>
+              <text x="194" y="39">01</text>
+              <text x="296" y="39">02</text>
+              <text x="398" y="39">03</text>
+            </g>
+            <g fill="none" stroke="#678b7c" stroke-dasharray="3 5">
+              <path d="M28 57H452" />
+              <rect x="58" y="71" width="68" height="260" rx="3" />
+              <rect x="160" y="71" width="68" height="260" rx="3" />
+              <rect x="364" y="71" width="68" height="260" rx="3" />
+            </g>
+            <rect
+              x="262"
+              y="71"
+              width="68"
+              height="260"
+              rx="3"
+              fill="#3b69584a"
+              stroke="#bad69b"
+            />
+            <g stroke="#d1e1ba" stroke-width="5" stroke-linecap="round">
+              <path
+                d="M73 98H111 M73 132H111 M73 176H111 M73 226H111 M73 294H111"
+              />
+              <path d="M175 130H213 M175 225H213" />
+              <path d="M277 177H315 M277 227H315 M277 294H315" />
+              <path d="M379 227H417" />
+            </g>
+            <g fill="none" stroke="#e7bc74">
+              <circle cx="296" cy="177" r="15" />
+              <path d="M311 169L345 146H433" />
+            </g>
+            <text
+              x="345"
+              y="136"
+              fill="#e7bc74"
+              font-size="10"
+              font-family="monospace"
+            >
+              REVIEW BAND
+            </text>
+          </svg>
+          <div class="figure-bottom">
+            <span>Illustrative diagram</span
+            ><span>Human review at every step</span>
+          </div>
+        </div>
+      </section>
+      <div class="tech-strip">
+        <div class="wrap">
+          <span>React + TypeScript</span><span>Rust + Tauri</span
+          ><span>Local image processing</span
+          ><span>Synthetic demo included</span>
+        </div>
+      </div>
+      <section class="section wrap split" id="details">
+        <div>
+          <p class="eyebrow">01 / THE PROBLEM</p>
+          <h2>Less repetition.<br />More room to interpret.</h2>
+        </div>
+        <div class="prose">
+          <p>
+            Gel electrophoresis is commonly used to separate DNA fragments, but
+            reviewing lane and band patterns manually can be repetitive. This
+            project explores how image processing can assist with visualization
+            and interpretation.
+          </p>
+          <p>
+            The prototype brings the image, lane profiles, and review notes into
+            one workspace. It makes the steps of an analysis visible, while
+            leaving interpretation with the researcher.
+          </p>
+        </div>
+      </section>
+      <section class="section process-section" id="process">
+        <div class="wrap">
+          <p class="eyebrow">02 / HOW IT WORKS</p>
+          <h2>From pixels to reviewed observations.</h2>
+          <ol class="workflow">
+            <li>
+              <span>01</span>
+              <h3>Open image</h3>
+              <p>Decode PNG/JPEG locally; preserve the original.</p>
+            </li>
+            <li>
+              <span>02</span>
+              <h3>Draw lanes</h3>
+              <p>Define each lane manually in image coordinates.</p>
+            </li>
+            <li>
+              <span>03</span>
+              <h3>Review bands</h3>
+              <p>Inspect brightness peaks; add or correct markers.</p>
+            </li>
+            <li>
+              <span>04</span>
+              <h3>Annotate & export</h3>
+              <p>Record observations; save a PNG or CSV.</p>
+            </li>
+          </ol>
+          <p class="process-note">
+            Optional sizing uses a manually assigned, reviewed same-gel ladder.
+            Lane detection and ladder matching are not automatic.
+          </p>
+        </div>
+      </section>
+      <section class="section wrap" id="features">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">03 / CURRENT CAPABILITIES</p>
+            <h2>A small, inspectable toolkit.</h2>
+          </div>
+          <p>
+            Implemented in the prototype.<br />Accuracy validation remains
+            pending.
+          </p>
+        </div>
+        <div class="feature-grid">
+          <article>
+            <span class="card-number">01 / ANNOTATE</span>
+            <h3>Editable lanes & bands</h3>
+            <p>
+              Draw and adjust lanes, mark bands or unresolved regions, add
+              notes, and undo changes.
+            </p>
+          </article>
+          <article>
+            <span class="card-number">02 / INSPECT</span>
+            <h3>Local peak suggestions</h3>
+            <p>
+              Inspect lane brightness and propose bands with adjustable
+              detection settings. Suggestions require review.
+            </p>
+            <span class="tag">Experimental method</span>
+          </article>
+          <article>
+            <span class="card-number">03 / COMPARE</span>
+            <h3>Reviewed ladder calibration</h3>
+            <p>
+              Estimate eligible linear-DNA sizes within reviewed anchors. Uncut
+              plasmids remain annotation-only.
+            </p>
+            <span class="tag">Approximate estimates</span>
+          </article>
+          <article>
+            <span class="card-number">04 / DOCUMENT</span>
+            <h3>A record you can revisit</h3>
+            <p>
+              Autosave locally, recover a previous revision, and export
+              annotated PNG or CSV with review status.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="section demo-section" id="demo">
+        <div class="wrap">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">04 / INSIDE THE PROTOTYPE</p>
+              <h2>One image. A clearer record.</h2>
+            </div>
+            <span class="demo-label">SYNTHETIC DATA ONLY</span>
+          </div>
+          <figure class="screenshot">
+            <div class="screenshot-bar">
+              <span class="window-dots" aria-hidden="true">● ● ●</span
+              ><span>Gel Notebook · browser preview</span
+              ><span>Local workspace</span>
+            </div>
+            <a href="assets/screenshots/synthetic-workspace.png"
+              ><img
+                src="assets/screenshots/synthetic-workspace.png"
+                width="1440"
+                height="1050"
+                alt="Actual Gel Notebook interface showing a synthetic gel, editable lane overlays, observations table, and brightness profile"
+                loading="lazy"
+            /></a>
+            <figcaption>
+              Actual application screenshot, captured using the generated
+              example. All lanes and band patterns are synthetic.
+            </figcaption>
+          </figure>
+          <details class="calibration-detail">
+            <summary>
+              Explore the ladder calibration view
+              <span aria-hidden="true">+</span>
+            </summary>
+            <img
+              src="assets/screenshots/synthetic-calibration.png"
+              width="1440"
+              height="1050"
+              alt="Actual synthetic example showing manually assigned ladder markers and calibration points"
+              loading="lazy"
+            />
+            <p>
+              At least four distinct, ordered, reviewed anchors are required.
+              The prototype does not extrapolate beyond them.
+            </p>
+          </details>
+        </div>
+      </section>
+      <section class="section wrap privacy" id="privacy">
+        <div>
+          <p class="eyebrow">PRIVACY BY DESIGN</p>
+          <h2>Your image belongs<br />in your workspace.</h2>
+        </div>
+        <div class="prose">
+          <p>
+            All image processing is performed locally on the user's device, and
+            images are not intentionally transmitted to external servers. The
+            application has no upload service, analytics, or account
+            integration.
+          </p>
+          <p>
+            Saved projects retain original image bytes, filenames, and notes.
+            Local storage is not additional encryption. Native
+            network-observation testing remains pending.
+          </p>
+          <p class="small">
+            This portfolio page has no upload form, external fonts, analytics,
+            or trackers. GitHub Pages receives ordinary page requests when
+            hosting it.
+          </p>
+        </div>
+      </section>
+      <section class="section wrap split about" id="about">
+        <div>
+          <p class="eyebrow">ABOUT THE PROJECT</p>
+          <h2>A question from the lab.<br />An engineering exploration.</h2>
+        </div>
+        <div class="prose">
+          <p>
+            While working with molecular biology techniques, I noticed how much
+            of gel interpretation involved repeated visual review and
+            documentation. I built this personal prototype to explore a more
+            organized workflow.
+          </p>
+          <p>
+            The engineering choices reflect that goal: preserve original
+            coordinates, keep calculations separate from display adjustments,
+            and make proposed versus reviewed observations explicit.
+          </p>
+          <p>
+            Next steps include assisted lane detection, more robust band
+            suggestions, accessibility improvements, and broader testing. This
+            is a personal project with no institutional endorsement.
+          </p>
+        </div>
+      </section>
+      <section class="wrap limitations" id="limitations">
+        <p class="eyebrow">LIMITATIONS & RESPONSIBLE USE</p>
+        <h2>An experimental tool. Researcher review required.</h2>
+        <p>
+          Image quality, distorted geometry, faint bands, and manual marker
+          assignments affect results. Brightness is not DNA quantity, and
+          approximate size agreement does not identify a sequence.
+          Representative-image accuracy and native distribution checks remain
+          incomplete.
+        </p>
+        <p>
+          This project is an experimental educational/research software
+          prototype. It is not a clinically validated diagnostic tool and should
+          not be used as the sole basis for scientific, medical, or clinical
+          decisions.
+        </p>
+      </section>
+      <section class="wrap repository" id="repository">
+        <p class="eyebrow">SOURCE & PROJECT DETAILS</p>
+        <h2>Follow the engineering.</h2>
+        <p id="repository-status">
+          The public repository link will appear here after publication. Source
+          code and setup instructions are included with this project.
+        </p>
+        <div class="resource-links">
+          <a href="ENGINEERING.md">Engineering notes ↗</a
+          ><a href="VALIDATION.md">Validation record ↗</a
+          ><a href="PUBLISHING.md">Publication guide ↗</a>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer wrap">
+      <span>Gel Electrophoresis Analyzer</span
+      ><span>Personal project · Experimental prototype · v0.1</span
+      ><a href="#main">Back to top ↑</a>
+    </footer>
+  </body>
+</html>
