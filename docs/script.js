@@ -1,6 +1,5 @@
 // Set by scripts/configure-pages.mjs after the repository owner is known.
-const configuredRepository =
-  "https://github.com/noeyah1230/gel-electrophoresis-analyzer";
+const configuredRepository = "";
 
 // Derive a project repository only on a standard GitHub Pages host.
 const owner = location.hostname.match(
